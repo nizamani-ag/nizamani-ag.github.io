@@ -36,6 +36,15 @@ header h1 {
   color: var(--accent);
 }
 
+.portrait {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 16px;
+}
+
 .tagline {
   margin: 8px 0 20px;
   font-style: italic;

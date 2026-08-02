@@ -47,12 +47,26 @@ header h1 {
 }
 
 .portrait {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent);
   flex-shrink: 0;
+}
+
+.about-wrap {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.about-wrap .portrait {
+  order: 2;
+}
+
+.about-text {
+  flex: 1;
 }
 
 .tagline {
@@ -124,5 +138,7 @@ footer {
   header h1 { font-size: 1.8rem; }
   .header-row { flex-direction: column; text-align: center; gap: 14px; }
   .header-text { text-align: center; }
+  .about-wrap { flex-direction: column; align-items: center; text-align: center; }
+  .about-wrap .portrait { order: 0; }
   nav a { display: inline-block; margin: 4px 8px; }
 }

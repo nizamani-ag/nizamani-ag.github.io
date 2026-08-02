@@ -1,0 +1,83 @@
+
+
+// --------This code based on this reference: 
+// Ermida, S.L., Soares, P., Mantas, V., Göttsche, F.-M., Trigo, I.F., 2020. 
+//    Google Earth Engine open-source code for Land Surface Temperature estimation from the Landsat series.
+//    Remote Sensing, 12 (9), 1471; https://doi.org/10.3390/rs12091471
+
+
+//-----------Define polygon for study area
+var polygon_study_area = ee.Geometry.Polygon([[.....]], null, false);
+
+// Link to the code that computes the Landsat LST
+var LandsatLST = require('users/sofiaermida/landsat_smw_lst:modules/Landsat_LST.js');
+
+// ------Select time -------
+var geometry = polygon_study_area;
+var satellite = 'L8';
+var date_start = '2025-04-15';
+var date_end = '2025-04-30';
+var use_ndvi = true;
+
+// Get landsat collection with added variables: NDVI, FVC, TPW, EM, LST
+var LandsatColl = LandsatLST.collection(satellite, date_start, date_end, geometry, use_ndvi);
+
+// Check if collection has data
+if (LandsatColl.size().getInfo() > 0) {
+  // Select the first feature
+  var exImage = LandsatColl.first();
+  
+  // Clip the image to the polygon before exporting
+  var clippedImage = exImage.clip(geometry);
+
+  var cmap1 = ['blue', 'cyan', 'green', 'yellow', 'red'];
+  var cmap3 = ['red', 'yellow', 'green'];
+
+  Map.centerObject(geometry, 12); // Slightly higher zoom for smaller area
+  
+  // Add all three layers
+  Map.addLayer(clippedImage.select('LST'), {min: 290, max: 320, palette: cmap1}, 'LST');
+  Map.addLayer(clippedImage.select('EM'), {min: 0.9, max: 1.0, palette: cmap1}, 'Emissivity');
+  Map.addLayer(clippedImage.select('NDVI'), {min: -1, max: 1, palette: cmap3}, 'NDVI');
+
+  // Export all three bands
+  Export.image.toDrive({
+    image: clippedImage.select('LST'),
+    description: 'LST_save',
+    scale: 30,
+    region: geometry,
+    fileFormat: 'GeoTIFF',
+    maxPixels: 1e13,
+    crs: 'EPSG:4326',
+    fileDimensions: 2048,
+    formatOptions: { cloudOptimized: true }
+  });
+
+  Export.image.toDrive({
+    image: clippedImage.select('EM'),
+    description: 'EM_save',
+    scale: 30,
+    region: geometry,
+    fileFormat: 'GeoTIFF',
+    maxPixels: 1e13,
+    crs: 'EPSG:4326',
+    fileDimensions: 2048,
+    formatOptions: { cloudOptimized: true }
+  });
+
+  Export.image.toDrive({
+    image: clippedImage.select('NDVI'),
+    description: 'NDVI_save',
+    scale: 30,
+    region: geometry,
+    fileFormat: 'GeoTIFF',
+    maxPixels: 1e13,
+    crs: 'EPSG:4326',
+    fileDimensions: 2048,
+    formatOptions: { cloudOptimized: true }
+  });
+
+} else {
+  print('No Landsat images found for the specified criteria!');
+  print('Try adjusting the dates or using a different satellite (L9)');
+}

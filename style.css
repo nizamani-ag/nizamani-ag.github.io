@@ -111,6 +111,41 @@ a:hover {
   padding-left: 0;
 }
 
+.entry {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: var(--light-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.entry-photo {
+  width: 180px;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.entry h3 {
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+
+.entry .meta {
+  font-size: 0.9rem;
+  color: #5a6f68;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .entry { flex-direction: column; }
+  .entry-photo { width: 100%; height: auto; }
+}
+
 footer {
   background: var(--light-bg);
   border-top: 1px solid var(--border);

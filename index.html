@@ -79,7 +79,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
   #pub-card-container .pub-card .col-l{flex:0 0 22%;max-width:22%}
   #pub-card-container .pub-card .col-r{flex:0 0 78%;max-width:78%}
 }
-#pub-card-container .pub-card img{width:100%;margin:0 auto;border-radius:6px}
+#pub-card-container .pub-card img{width:100%;margin:0 auto;border-radius:6px;cursor:zoom-in}
 #pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
 #pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4;color:#333}
 #pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
@@ -93,6 +93,12 @@ section.block li{margin-bottom:8px;line-height:1.5}
 #footer .copyright{color:var(--main-color)}
 
 .bold{font-weight:600}
+
+/* Lightbox for publication thumbnails */
+#lightbox-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(20,30,25,0.92);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}
+#lightbox-overlay.open{display:flex}
+#lightbox-overlay img{max-width:94vw;max-height:92vh;object-fit:contain;border-radius:8px;box-shadow:0 4px 30px rgba(0,0,0,0.5)}
+#lightbox-overlay .lb-close{position:absolute;top:16px;right:24px;color:#fff;font-size:2rem;font-family:sans-serif;cursor:pointer}
     </style>
 </head>
 
@@ -164,7 +170,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
                 <div class="pub-card">
                     <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/nbs-resilience.png" alt="" onerror="this.style.display='none'">
+                        <img src="projects/nbs-resilience.png" data-full="projects/full/nbs-resilience.jpg" alt="" onerror="this.style.display='none'">
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -183,7 +189,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
                 <div class="pub-card">
                     <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/pinn-urban-cooling.png" alt="" onerror="this.style.display='none'">
+                        <img src="projects/pinn-urban-cooling.png" data-full="projects/full/pinn-urban-cooling.jpg" alt="" onerror="this.style.display='none'">
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -222,7 +228,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
                 <div class="pub-card">
                     <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/smart-urban-design.png" alt="" onerror="this.style.display='none'">
+                        <img src="projects/smart-urban-design.png" data-full="projects/full/smart-urban-design.png" alt="" onerror="this.style.display='none'">
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -241,7 +247,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
                 <div class="pub-card">
                     <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/meteoracker.png" alt="" onerror="this.style.display='none'">
+                        <img src="projects/meteoracker.png" data-full="projects/full/meteoracker.png" alt="" onerror="this.style.display='none'">
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -277,7 +283,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
                 <div class="pub-card">
                     <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/air-curtain.png" alt="" onerror="this.style.display='none'">
+                        <img src="projects/air-curtain.png" data-full="projects/full/air-curtain.png" alt="" onerror="this.style.display='none'">
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -355,6 +361,24 @@ section.block li{margin-bottom:8px;line-height:1.5}
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Lightbox: click any publication thumbnail to view the full figure
+(function () {
+  var overlay = document.createElement('div');
+  overlay.id = 'lightbox-overlay';
+  overlay.innerHTML = '<span class="lb-close">&times;</span><img alt="Full figure">';
+  document.body.appendChild(overlay);
+  var lbImg = overlay.querySelector('img');
+  function close() { overlay.classList.remove('open'); }
+  overlay.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  document.querySelectorAll('#pub-card-container .pub-card img').forEach(function (thumb) {
+    thumb.addEventListener('click', function () {
+      lbImg.src = thumb.getAttribute('data-full') || thumb.src;
+      overlay.classList.add('open');
+    });
+  });
+})();
 </script>
 </body>
 </html>

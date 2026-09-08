@@ -103,7 +103,7 @@ section.block li{margin-bottom:8px;line-height:1.5}
     
 /* ---- layout upgrades ---- */
 html{scroll-behavior:smooth}
-#news,#research,#pub-container,#experience,#education{scroll-margin-top:66px}
+#news,#research,#pub-container,#experience,#education,#gallery{scroll-margin-top:66px}
 body{padding-top:52px}
 #topnav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);border-bottom:1px solid var(--secondary-link-border-color);box-shadow:0 1px 6px rgba(0,0,0,0.06)}
 #topnav .nav-inner{max-width:1080px;margin:0 auto;padding:0 30px;height:52px;display:flex;align-items:center;justify-content:space-between}
@@ -117,7 +117,11 @@ body{padding-top:52px}
 .stat-pill strong{color:var(--main-color)}
 .stat-pill.seeking{background:var(--main-color);color:#fff;border-color:var(--main-color)}
 .stat-pill.seeking strong{color:#fff}
-.pub-filters{margin:6px 0 4px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gallery-grid figure{margin:0}
+.gallery-grid img{width:100%;height:150px;object-fit:cover;border-radius:6px;cursor:zoom-in;border:1px solid var(--secondary-link-border-color)}
+.gallery-grid figcaption{font-size:0.82rem;color:#777;text-align:center;margin-top:4px}
+@media (max-width:767px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
 .pf-btn{background:#fff;border:1px solid var(--secondary-link-border-color);border-radius:16px;padding:3px 14px;font-size:0.85rem;color:#555;margin:0 6px 6px 0;cursor:pointer}
 .pf-btn:hover{border-color:var(--main-color);color:var(--main-color)}
 .pf-btn.active{background:var(--main-color);border-color:var(--main-color);color:#fff}
@@ -144,6 +148,7 @@ section.block.timeline ul li::after{content:"";position:absolute;left:2px;top:8p
 <a href="#pub-container">Publications</a>
 <a href="#experience">Experience</a>
 <a href="#education">Education</a>
+<a href="#gallery">Gallery</a>
 </div></div></nav>
 
 <div id="main">
@@ -400,6 +405,18 @@ section.block.timeline ul li::after{content:"";position:absolute;left:2px;top:8p
                 <li><strong>Bachelor of Architecture</strong> — Mehran University of Engineering &amp; Technology, Pakistan</li>
             </ul>
         </section>
+
+        <section class="block" id="gallery">
+            <h4 class="subtitle">Gallery</h4>
+            <div class="gallery-grid">
+                <figure><img src="gallery-gsb-1.jpg" alt="Green Sponge Buildings site"><figcaption>Green Sponge Buildings — site</figcaption></figure>
+                <figure><img src="gallery-gsb-2.jpg" alt="Green Sponge Buildings site"><figcaption>Green Sponge Buildings — site</figcaption></figure>
+                <figure><img src="gallery-conf-1.jpg" alt="Conference"><figcaption>Conference</figcaption></figure>
+                <figure><img src="gallery-conf-2.jpg" alt="Conference"><figcaption>Conference</figcaption></figure>
+                <figure><img src="gallery-news-1.jpg" alt="University news"><figcaption>In the news</figcaption></figure>
+                <figure><img src="malaysia-event.jpg" alt="Postgraduate association event"><figcaption>Postgraduate association, Malaysia</figcaption></figure>
+            </div>
+        </section>
     </div>
 </div>
 
@@ -433,7 +450,7 @@ document.querySelectorAll('.pf-btn').forEach(function (btn) {
   function close() { overlay.classList.remove('open'); }
   overlay.addEventListener('click', close);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
-  document.querySelectorAll('#pub-card-container .pub-card img').forEach(function (thumb) {
+  document.querySelectorAll('#pub-card-container .pub-card img, .gallery-grid img').forEach(function (thumb) {
     thumb.addEventListener('click', function () {
       lbImg.src = thumb.getAttribute('data-full') || thumb.src;
       overlay.classList.add('open');

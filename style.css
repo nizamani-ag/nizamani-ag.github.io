@@ -202,7 +202,6 @@ button { font: inherit; color: inherit; }
 }
 
 
-/* v4: progressive disclosure above the fold */
 body { font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .hero h1, .section-label h2, .section-heading-simple h2, .contact-section h2,
 .research-item h3, .work-copy h3, .background-columns h3 {
@@ -256,7 +255,6 @@ body { font-family: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "
 }
 
 
-/* v6: authoritative desktop rebalance — cobalt-only, Inter throughout */
 :root {
   --ink: #202633;
   --ink-soft: #5f6978;
@@ -402,7 +400,6 @@ body,
 }
 
 
-/* v7: mobile availability label */
 .availability-years::before { content: " · "; }
 @media (max-width: 760px) {
   .availability {
@@ -419,7 +416,6 @@ body,
   .availability-years::before { content: none; }
 }
 
-/* v8: scientific positioning refinement */
 .current-direction {
   margin-top: 22px !important;
   padding-top: 16px;
@@ -437,7 +433,6 @@ body,
 }
 
 
-/* v9 surgical language/legibility refinements */
 .contact-copy { max-width: 620px; font-size: 1.04rem; line-height: 1.68; }
 .contact-copy p { margin-bottom: 19px; }
 .contact-links { row-gap: 10px; }
@@ -453,7 +448,6 @@ body,
 }
 
 
-/* v11: governance manuscript integration */
 .work-row-text { align-items: start; }
 .manuscript-lead {
   align-self: stretch;
@@ -487,7 +481,6 @@ body,
 }
 
 
-/* v13: recognition and public engagement */
 .recognition-section {
   padding-top: 82px;
   padding-bottom: 84px;
@@ -558,6 +551,5 @@ body,
 }
 
 
-/* v14: recognition label cleanup */
 .recognition-meta { display: block; color: var(--accent); font-size: .88rem; font-weight: 700; }
 @media (max-width: 760px) { .recognition-meta { display: block; } }

@@ -1,4 +1,5 @@
-# Internal design iteration notes (not part of the published site)
+# Local working files
+.render/
 REDESIGN_NOTES*.md
 
 # OS/editor junk

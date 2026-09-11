@@ -485,7 +485,78 @@ body,
   .manuscript-lead { padding: 16px 0 18px; }
   .manuscript-topic { max-width: none; }
 }
-\n\n/* v13: recognition and public engagement */\n.recognition-section {\n  padding-top: 82px;\n  padding-bottom: 84px;\n  background: var(--paper);\n  border-top: 1px solid var(--line);\n}\n.recognition-list { border-top: 1px solid var(--line); }\n.recognition-item {\n  display: grid;\n  grid-template-columns: 150px minmax(0, 1fr);\n  gap: 28px;\n  padding: 24px 0 26px;\n  border-bottom: 1px solid var(--line);\n}\n.recognition-meta {\n  display: flex;\n  flex-direction: column;\n  gap: 3px;\n  color: var(--accent);\n  font-size: .88rem;\n  font-weight: 700;\n}\n.recognition-meta span:last-child {\n  color: var(--ink-soft);\n  font-size: .82rem;\n  font-weight: 600;\n}\n.recognition-item h3 {\n  margin: 0 0 7px;\n  color: var(--ink);\n  font-size: 1.08rem;\n  line-height: 1.4;\n}\n.recognition-item p {\n  margin: 0 0 9px;\n  max-width: 720px;\n  color: var(--ink-soft);\n  font-size: .98rem;\n  line-height: 1.6;\n}\n.recognition-item a { font-size: .92rem; font-weight: 700; text-decoration: none; }\n.more-coverage { margin-top: 18px; border-bottom: 1px solid var(--line); }\n.more-coverage summary {\n  padding: 14px 0 16px;\n  cursor: pointer;\n  color: var(--accent);\n  font-size: .94rem;\n  font-weight: 700;\n}\n.coverage-links { padding-bottom: 15px; }\n.coverage-links a {\n  display: grid;\n  grid-template-columns: 210px minmax(0, 1fr);\n  gap: 24px;\n  padding: 13px 0;\n  border-top: 1px solid var(--line);\n  text-decoration: none;\n}\n.coverage-links span { color: var(--ink-soft); font-size: .86rem; }\n.coverage-links strong { color: var(--ink); font-size: .94rem; font-weight: 650; }\n.coverage-links a:hover strong { color: var(--accent); }\n@media (max-width: 760px) {\n  .recognition-section { padding-top: 52px; padding-bottom: 54px; }\n  .recognition-item { grid-template-columns: 1fr; gap: 8px; padding: 20px 0 22px; }\n  .recognition-meta { flex-direction: row; gap: 8px; align-items: baseline; }\n  .recognition-meta span + span::before { content: "· "; }\n  .coverage-links a { grid-template-columns: 1fr; gap: 3px; padding: 12px 0; }\n}\n
+
+
+/* v13: recognition and public engagement */
+.recognition-section {
+  padding-top: 82px;
+  padding-bottom: 84px;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+}
+.recognition-list { border-top: 1px solid var(--line); }
+.recognition-item {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 28px;
+  padding: 24px 0 26px;
+  border-bottom: 1px solid var(--line);
+}
+.recognition-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: var(--accent);
+  font-size: .88rem;
+  font-weight: 700;
+}
+.recognition-meta span:last-child {
+  color: var(--ink-soft);
+  font-size: .82rem;
+  font-weight: 600;
+}
+.recognition-item h3 {
+  margin: 0 0 7px;
+  color: var(--ink);
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+.recognition-item p {
+  margin: 0 0 9px;
+  max-width: 720px;
+  color: var(--ink-soft);
+  font-size: .98rem;
+  line-height: 1.6;
+}
+.recognition-item a { font-size: .92rem; font-weight: 700; text-decoration: none; }
+.more-coverage { margin-top: 18px; border-bottom: 1px solid var(--line); }
+.more-coverage summary {
+  padding: 14px 0 16px;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: .94rem;
+  font-weight: 700;
+}
+.coverage-links { padding-bottom: 15px; }
+.coverage-links a {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 24px;
+  padding: 13px 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+}
+.coverage-links span { color: var(--ink-soft); font-size: .86rem; }
+.coverage-links strong { color: var(--ink); font-size: .94rem; font-weight: 650; }
+.coverage-links a:hover strong { color: var(--accent); }
+@media (max-width: 760px) {
+  .recognition-section { padding-top: 52px; padding-bottom: 54px; }
+  .recognition-item { grid-template-columns: 1fr; gap: 8px; padding: 20px 0 22px; }
+  .recognition-meta { flex-direction: row; gap: 8px; align-items: baseline; }
+  .recognition-meta span + span::before { content: "· "; }
+  .coverage-links a { grid-template-columns: 1fr; gap: 3px; padding: 12px 0; }
+}
+
 
 /* v14: recognition label cleanup */
 .recognition-meta { display: block; color: var(--accent); font-size: .88rem; font-weight: 700; }

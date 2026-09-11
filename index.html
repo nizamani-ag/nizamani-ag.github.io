@@ -1,481 +1,294 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <title>Abdul Ghafoor Nizamani</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Abdul Ghafoor Nizamani is a Doctoral Research Fellow at Østfold University of Applied Sciences, working on urban climate, green infrastructure, and physics-informed machine learning.">
-    <meta name="keywords" content="Abdul Ghafoor Nizamani,Urban Climate,Green Infrastructure,Nature-based Solutions,Physics-Informed Neural Networks,Urban Heat Island,Sustainability">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <style type="text/css">
-/* Color Scheme: Green / Sustainability */
-:root {
-    --background-color: #f7fbf5;
-    --highlight-color: #b6274e;
-    --main-color: #3F6139;
-    --link-color: #ad4b73;
-    --link-color-hover: #292c1f;
-    --secondary-link-color: #6d8436;
-    --secondary-link-border-color: #a8bfa0;
-    --secondary-content-background-color: #feffff;
-    --link-button-background-color: #fafdff;
-}
-
-body{margin:0;padding:0;}
-a{color:var(--link-color)}
-a:hover{color:var(--link-color-hover);cursor:pointer}
-.highlight{color:var(--highlight-color);font-weight:600}
-.highlight:hover{color:var(--highlight-color);font-weight:600}
-
-.main-content{padding:0;text-align:center;cursor:default;}
-@media (min-width: 768px) {.main-content{width:66%;min-width:668px;margin:auto;}}
-@media (min-width: 1200px) {.main-content{width:66%;max-width:1080px;margin:auto;}}
-
-#main{margin:0 auto 30px;padding:45px 30px 15px;width:100%;min-width:240px;text-align:center;background-color:var(--background-color)}
-
-#main-content-container{margin:0 auto;padding:25px 20px;max-width:1080px;background:#ffffff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
-@media (min-width: 768px) { #main-content-container{padding:15px 0 0;} }
-#main-content-container .col-avatar{text-align:center;min-width:220px;}
-#main-content-container .col-avatar .avatar{z-index:100;width:200px;height:200px;border-radius:100%;object-fit:cover;object-position:center 20%;box-shadow:0 0 0 0.3em #eee;opacity:1;}
-
-#main-info-container{padding-top:15px}
-#main-info-container .col-name{text-align:center;margin-top:30px}
-@media (min-width: 768px) { #main-info-container .col-name{text-align:left;margin-top:0;} }
-#main-info-container .col-name .text{text-align:left;margin-bottom:0.5rem;}
-#main-info-container .col-name .name{color:var(--main-color);font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
-#main-info-container .col-name .email{color:#333;font-size:16px}
-
-.social-links{text-align:center;padding-bottom:15px;}
-.social-links img{vertical-align:middle}
-.seeking-badge{display:inline-block;background:var(--main-color);color:#fff;border-radius:20px;padding:4px 18px;font-size:0.88rem;font-weight:600;letter-spacing:0.02em}
-
-.content-container{width:100%;padding:0 30px}
-.main-news-container{margin:auto;max-width:1080px;text-align:left;padding-top:30px;font-size:1rem;line-height:1.4}
-.main-news-container .subtitle{margin-top:0px;color:var(--main-color)}
-.main-news-container .news-list{margin-bottom:0rem}
-
-section.block{background:var(--secondary-content-background-color);padding:20px;margin:30px auto 0;max-width:1080px;text-align:left;border-radius:10px;border:1px solid var(--secondary-link-border-color)}
-section.block h4.subtitle{color:var(--main-color);margin-bottom:14px}
-section.block ul{padding-left:20px;margin:0}
-section.block li{margin-bottom:8px;line-height:1.5}
-
-.entry{display:flex;gap:18px;align-items:flex-start;margin-bottom:18px;padding:14px;background:#fff;border-radius:8px;border:1px solid var(--secondary-link-border-color)}
-.entry:last-child{margin-bottom:0}
-.entry-photo{width:180px;height:135px;object-fit:cover;border-radius:6px;flex-shrink:0}
-.entry h5{color:var(--main-color);font-weight:600;margin-bottom:2px}
-.entry .meta{font-size:0.9rem;color:#777;margin-bottom:6px}
-.entry p{margin-bottom:0;font-size:0.95rem}
-@media (max-width: 767px){ .entry{flex-direction:column} .entry-photo{width:100%;height:auto} }
-
-#pub-container{margin:auto;max-width:1080px;text-align:left;padding-top:30px}
-#pub-container .subtitle{color:var(--main-color);}
-#pub-card-container .pub-card{width:100%;padding:15px 0;font-size:1rem;border-bottom:1px solid #eee}
-#pub-card-container .pub-card:last-child{border-bottom:none}
-#pub-card-container .pub-card .col-l{text-align:center;padding-top:10px}
-#pub-card-container .pub-card .col-r{padding-top:10px}
-@media (min-width: 768px) {
-  #pub-card-container .pub-card .col-l{flex:0 0 22%;max-width:22%}
-  #pub-card-container .pub-card .col-r{flex:0 0 78%;max-width:78%}
-}
-#pub-card-container .pub-card img{width:100%;margin:0 auto;border-radius:6px;cursor:zoom-in}
-#pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
-#pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4;color:#333}
-#pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
-#pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
-#pub-card-container .pub-card .conference{color:#333333;font-weight:600}
-#pub-card-container .row{margin:0}
-#pub-card-container .col-l,
-#pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
-
-#footer{padding:1.5em 0;margin-top:2rem;min-width:240px;font-size:14px;text-align:center;background:#ffffff;box-shadow:0 -2px 8px rgba(0,0,0,0.05);}
-#footer .copyright{color:var(--main-color)}
-
-.bold{font-weight:600}
-
-/* Lightbox for publication thumbnails */
-#lightbox-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(20,30,25,0.92);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}
-#lightbox-overlay.open{display:flex}
-#lightbox-overlay img{max-width:94vw;max-height:92vh;object-fit:contain;border-radius:8px;box-shadow:0 4px 30px rgba(0,0,0,0.5)}
-#lightbox-overlay .lb-close{position:absolute;top:16px;right:24px;color:#fff;font-size:2rem;font-family:sans-serif;cursor:pointer}
-    
-/* ---- layout upgrades ---- */
-html{scroll-behavior:smooth}
-#news,#research,#pub-container,#experience,#education,#gallery{scroll-margin-top:66px}
-body{padding-top:52px}
-#topnav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);border-bottom:1px solid var(--secondary-link-border-color);box-shadow:0 1px 6px rgba(0,0,0,0.06)}
-#topnav .nav-inner{max-width:1080px;margin:0 auto;padding:0 30px;height:52px;display:flex;align-items:center;justify-content:space-between}
-#topnav .nav-name{font-weight:700;color:var(--main-color);font-size:1.05rem}
-#topnav .nav-name:hover{text-decoration:none}
-#topnav .nav-links a{margin-left:18px;font-size:0.92rem;color:#555}
-#topnav .nav-links a:hover{color:var(--main-color);text-decoration:none}
-@media (max-width:767px){#topnav .nav-links{display:none}}
-.stats-bar{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:4px 0 16px}
-.stat-pill{background:var(--background-color);border:1px solid var(--secondary-link-border-color);border-radius:20px;padding:3px 14px;font-size:0.85rem;color:#555}
-.stat-pill strong{color:var(--main-color)}
-.stat-pill.seeking{background:var(--main-color);color:#fff;border-color:var(--main-color)}
-.stat-pill.seeking strong{color:#fff}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.gallery-grid figure{margin:0}
-.gallery-grid img{width:100%;height:150px;object-fit:cover;border-radius:6px;cursor:zoom-in;border:1px solid var(--secondary-link-border-color)}
-.gallery-grid figcaption{font-size:0.82rem;color:#777;text-align:center;margin-top:4px}
-@media (max-width:767px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
-.pf-btn{background:#fff;border:1px solid var(--secondary-link-border-color);border-radius:16px;padding:3px 14px;font-size:0.85rem;color:#555;margin:0 6px 6px 0;cursor:pointer}
-.pf-btn:hover{border-color:var(--main-color);color:var(--main-color)}
-.pf-btn.active{background:var(--main-color);border-color:var(--main-color);color:#fff}
-.pub-card.hidden{display:none}
-section.block.timeline .entry{position:relative;margin-left:14px;border:none;background:transparent;padding:0 0 0 30px}
-section.block.timeline .entry::before{content:"";position:absolute;left:8px;top:8px;bottom:-8px;width:2px;background:var(--secondary-link-border-color)}
-section.block.timeline .entry:last-child::before{display:none}
-section.block.timeline .entry::after{content:"";position:absolute;left:2px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--main-color);border:3px solid #fff;box-shadow:0 0 0 2px var(--secondary-link-border-color)}
-section.block.timeline .entry-photo{width:140px;height:105px}
-section.block.timeline ul{list-style:none;padding-left:0}
-section.block.timeline ul li{position:relative;padding:0 0 14px 30px;margin:0}
-section.block.timeline ul li::before{content:"";position:absolute;left:8px;top:8px;bottom:-6px;width:2px;background:var(--secondary-link-border-color)}
-section.block.timeline ul li:last-child::before{display:none}
-section.block.timeline ul li::after{content:"";position:absolute;left:2px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--main-color);border:3px solid #fff;box-shadow:0 0 0 2px var(--secondary-link-border-color)}
-</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Abdul Ghafoor Nizamani | Urban Climate Adaptation &amp; Resilient Development</title>
+<meta content="Academic website of Abdul Ghafoor Nizamani, Doctoral Research Fellow working on urban climate adaptation, resilient urban development, nature-based solutions, urban systems, and computational climate modelling." name="description"/>
+<meta content="#315fcb" name="theme-color"/>
+<meta content="website" property="og:type"/>
+<meta content="Abdul Ghafoor Nizamani | Academic Website" property="og:title"/>
+<meta content="Urban climate adaptation, resilient development, nature-based solutions, urban systems, and computational climate modelling." property="og:description"/>
+<meta content="https://nizamani-ag.github.io/photo.jpg" property="og:image"/>
+<meta content="https://nizamani-ag.github.io/" property="og:url"/>
+<link href="https://nizamani-ag.github.io/" rel="canonical"/>
+<meta content="summary" name="twitter:card"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="style.css" rel="stylesheet"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdul Ghafoor Nizamani",
+    "jobTitle": "Doctoral Research Fellow",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Østfold University of Applied Sciences"},
+    "sameAs": [
+      "https://scholar.google.com/citations?user=hIw2pUEAAAAJ&hl=en",
+      "https://github.com/nizamani-ag",
+      "https://orcid.org/0000-0003-0678-5171",
+      "https://www.hiof.no/iio/english/people/aca/abdulgn/"
+    ]
+  }
+  </script>
 </head>
-
 <body>
-<nav id="topnav"><div class="nav-inner">
-<a class="nav-name" href="#main">Abdul Ghafoor Nizamani</a>
-<div class="nav-links">
-<a href="#news">News</a>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header" id="top">
+<div class="nav-shell">
+<a aria-label="Abdul Ghafoor Nizamani home" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">AGN</span>
+<span class="brand-name">Abdul Ghafoor Nizamani</span>
+</a>
+<button aria-controls="primary-nav" aria-expanded="false" class="menu-toggle" type="button">
+<span class="sr-only">Toggle navigation</span><span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary navigation" class="primary-nav" id="primary-nav">
 <a href="#research">Research</a>
-<a href="#pub-container">Publications</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-<a href="#gallery">Gallery</a>
-</div></div></nav>
-
-<div id="main">
-    <div class="main-content">
-        <div id="main-content-container" class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-3 col-avatar">
-                    <img src="photo.jpg" class="avatar" alt="Abdul Ghafoor Nizamani" />
-                </div>
-                <div class="col-sm-12 col-md-8">
-                    <div id="main-info-container">
-                        <div class="col-name">
-                            <h1 class="name"><span>Abdul Ghafoor Nizamani</span></h1>
-                            <p class="email"><span style="margin-right:1em">Email: abdul.g.nizamani [at] hiof [dot] no</span></p>
-                            <p class="text">I am a Doctoral Research Fellow at <a target="_blank" href="https://www.hiof.no/iio/english/">Østfold University of Applied Sciences</a>, Norway, advised by <a target="_blank" href="https://www.hiof.no/iio/english/people/aca/">Geir Torgersen</a>.
-                            My PhD thesis, <em>Green Sponge Buildings</em>, explores how buildings and urban systems can act as climate-resilient sponges through green infrastructure and nature-based solutions.
-                            My research combines urban climate science, environmental sensing, and physics-informed machine learning to mitigate urban heat and pollution.
-                            Previously, I worked as a Project Engineer (BIM) at NAFFCO in Dubai, and hold degrees from Politecnico di Torino, Universiti Sains Malaysia, and Mehran UET.
-                            I am seeking postdoctoral positions (2026–27) in urban climate, green infrastructure, and machine learning for environmental science.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="social-links">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" style="width:20px;height:20px;margin:5px;">
-                <a href="https://scholar.google.com/citations?user=hIw2pUEAAAAJ&hl=en" target="_blank">Google Scholar</a>
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" style="width:26px;height:26px;margin:5px;">
-                <a href="https://github.com/nizamani-ag" target="_blank">GitHub</a>
-                <img src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" alt="ORCID" style="width:20px;height:20px;margin:5px;">
-                <a href="https://orcid.org/0000-0003-0678-5171" target="_blank">ORCID</a>
-                <i class="fa fa-university" aria-hidden="true" style="font-size:20px;margin:5px;"></i>
-                <a href="https://www.hiof.no/iio/english/people/aca/abdulgn/" target="_blank">University Profile</a>
-            </div>
-            <div style="text-align:center;padding:2px 0 16px;">
-                <span class="seeking-badge">Seeking Postdoc Positions 2026–27</span>
-            </div>
-        </div>
-    </div>
+<a href="#work">Work</a>
+<a href="#publications">Publications</a>
+<a href="#background">Background</a>
+<a href="#contact">Contact</a>
+</nav>
 </div>
-
-<div class="main-content">
-    <div class="content-container">
-        <div class="main-news-container">
-            <h4 class="subtitle" id="news">News &amp; Updates</h4>
-            <ul style="max-height:300px;overflow-y:auto;list-style-type:disc;padding-left:20px;margin:0;font-size:0.9rem;">
-                <li>[<strong>2026/09</strong>] New preprint: <strong>operational stormwater performance of building-integrated green walls</strong>, under review at <em>npj Urban Sustainability</em>.</li>
-                <li>[<strong>2026/07</strong>] Our paper on <strong>physics-informed neural network calibration for urban cooling</strong> is published in <em>Sustainable Cities and Society</em>.</li>
-                <li>[<strong>2026/05</strong>] Released the full PINN codebase for urban cooling modelling on <a target="_blank" href="https://doi.org/10.5281/zenodo.20323753">Zenodo</a>.</li>
-                <li>[<strong>2026</strong>] Our systematic analysis of <strong>urban resilience through nature-based solutions</strong> is published in <em>Sustainable Cities and Society</em>.</li>
-                <li>[<strong>2025/12</strong>] <em>Climate as the primary moderator</em>, our review on vertical greenery systems for stormwater management, is published in <em>Environmental Research Letters</em>.</li>
-                <li>[<strong>2025/10</strong>] Preprint released: <strong>Smart Urban Design with Physics-Informed Neural Networks</strong> quantifying green infrastructure cooling from satellite thermal data (<a target="_blank" href="https://doi.org/10.31223/x51t9d">EarthArXiv</a>).</li>
-                <li>[<strong>2026</strong>] Serving as ad hoc reviewer for <em>Land</em>, <em>Buildings</em>, and related journals.</li>
-                <li>[<strong>2024</strong>] MeteoTracker mobile sensor evaluation paper published in <em>Atmospheric Measurement Techniques</em>.</li>
-            </ul>
-
-            <h4 class="subtitle" id="research" style="margin-top:30px">Research Focus</h4>
-            <p>My research focuses on making cities cooler, greener, and more resilient in a changing climate. I combine <strong>nature-based solutions</strong> (green roofs, vertical greenery systems, urban forests) with <strong>physics-informed neural networks</strong> that embed physical laws — such as heat diffusion — directly into machine learning models, enabling accurate prediction of urban surface temperatures from satellite data.</p>
-            <p>In my PhD project <em>Green Sponge Buildings</em>, I study how buildings can absorb, store, and release rainwater and heat like a sponge, integrating stormwater management with thermal comfort. My work spans field sensing, geospatial data fusion, scenario simulation for urban planners, and evidence synthesis across climate zones.</p>
-        </div>
-    </div>
-
-    <div class="content-container">
-        <div id="pub-container">
-            <h4 class="subtitle">Publications</h4>
-            <div class="pub-filters">
-                <button class="pf-btn active" data-filter="all">All</button>
-                <button class="pf-btn" data-filter="climate">Urban Climate &amp; Green Infrastructure</button>
-                <button class="pf-btn" data-filter="env">Air Quality, Energy &amp; Sensing</button>
-            </div>
-            <div id="pub-card-container">
-
-                <div class="pub-card" data-topic="climate">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/green-walls.png" data-full="projects/full/green-walls.png" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Operational stormwater performance of building integrated green walls</h5>
-                        <h6 class="authors"><u>Abdul Ghafoor Nizamani</u>, Maria Pregnolato, Geir Torgersen</h6>
-                        <p class="info">
-                            <span class="conference">Research Square preprint</span> · 2026 · <span class="highlight">Under review at npj Urban Sustainability</span> ·
-                            <a target="_blank" href="https://doi.org/10.21203/rs.3.rs-10841067/v1">Preprint</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="climate">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/nbs-resilience.png" data-full="projects/full/nbs-resilience.jpg" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Urban resilience through nature-based solutions in an era of environmental extremes: A global systematic analysis</h5>
-                        <h6 class="authors"><u>Abdul Ghafoor Nizamani</u>, Dung Thi Vu, Rafeeque Ahmed Nizamani, Geir Torgersen</h6>
-                        <p class="info">
-                            <span class="conference">Sustainable Cities and Society</span> · 2026 ·
-                            <a target="_blank" href="https://doi.org/10.1016/j.scs.2026.107192">Paper</a> /
-                            <a target="_blank" href="https://hdl.handle.net/11250/5363609">Full text</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="climate">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/pinn-urban-cooling.png" data-full="projects/full/pinn-urban-cooling.jpg" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Physics-informed neural network calibration and application for urban cooling</h5>
-                        <h6 class="authors"><u>Abdul Ghafoor Nizamani</u>, Dung Thi Vu, Rafeeque Ahmed Nizamani, Cunrong Li</h6>
-                        <p class="info">
-                            <span class="conference">Sustainable Cities and Society</span> · 2026 ·
-                            <a target="_blank" href="https://doi.org/10.1016/j.scs.2026.107525">Paper</a> /
-                            <a target="_blank" href="https://doi.org/10.5281/zenodo.20323753">Code</a> /
-                            <a target="_blank" href="https://hdl.handle.net/11250/5523626">Full text</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="climate">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/vgs-stormwater.png" data-full="projects/full/vgs-stormwater.png" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Climate as the primary moderator: towards context-driven design and implementation of vertical greenery systems for stormwater management</h5>
-                        <h6 class="authors"><u>Abdul Ghafoor Nizamani</u>, Geir Torgersen</h6>
-                        <p class="info">
-                            <span class="conference">Environmental Research Letters</span> · 2025 ·
-                            <a target="_blank" href="https://doi.org/10.1088/1748-9326/ae2b86">Paper</a> /
-                            <a target="_blank" href="https://hdl.handle.net/11250/5274819">Full text</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="climate">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/smart-urban-design.png" data-full="projects/full/smart-urban-design.png" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Smart Urban Design with Physics-Informed Neural Networks: Quantifying Temperature Reductions from Green Infrastructure Using Satellite Thermal Data</h5>
-                        <h6 class="authors">Dung Thi Vu, Rafeeque Ahmed Nizamani, <u>Abdul Ghafoor Nizamani</u></h6>
-                        <p class="info">
-                            <span class="conference">EarthArXiv preprint</span> · 2025 ·
-                            <a target="_blank" href="https://doi.org/10.31223/X51T9D">Preprint</a> /
-                            <a target="_blank" href="https://doi.org/10.5281/zenodo.17385259">Code</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="env">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/meteoracker.png" data-full="projects/full/meteoracker.png" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Performance evaluation of MeteoTracker mobile sensor for outdoor applications</h5>
-                        <h6 class="authors">Francesca Barbano, Erika Brattich, Cristian Cintolesi, <u>A. Ghafoor Nizamani</u>, Silvana Di Sabatino, et al.</h6>
-                        <p class="info">
-                            <span class="conference">Atmospheric Measurement Techniques</span> · 2024 ·
-                            <a target="_blank" href="https://amt.copernicus.org/articles/17/3255/2024/">Paper</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="env">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/kuznets.png" data-full="projects/full/kuznets.png" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">The impacts of conventional energies on environmental degradation: does Pakistan's economic and environmental model follow the Kuznets curve?</h5>
-                        <h6 class="authors">Rafeeque Ahmed Nizamani, Faheem Shaikh, <u>Abdul Ghafoor Nizamani</u>, Najeebullah Haider Mirjat, Laveet Kumar, Muhammad Ehsan Elahi Assad</h6>
-                        <p class="info">
-                            <span class="conference">Environmental Science and Pollution Research</span> · 2023 ·
-                            <a target="_blank" href="https://doi.org/10.1007/s11356-022-22611-x">Paper</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="pub-card" data-topic="env">
-                    <div class="row">
-                    <div class="col-l col-xs-12 col-lg-3">
-                        <img src="projects/air-curtain.png" data-full="projects/full/air-curtain.png" alt="" onerror="this.style.display='none'">
-                    </div>
-                    <div class="col-r col-xs-12 col-lg-9">
-                        <div class="pub-card-body">
-                        <h5 class="title">Influences of the optimized air curtain at subway entrance to reduce the ingress of outdoor airborne particles</h5>
-                        <h6 class="authors">Tugce Chen, Sheng-Jie Cao, Jing Wang, <u>Abdul Ghafoor Nizamani</u>, Zhengtao Feng, Prashant Kumar</h6>
-                        <p class="info">
-                            <span class="conference">Energy and Buildings</span> · 2021 ·
-                            <a target="_blank" href="https://doi.org/10.1016/j.enbuild.2021.111028">Paper</a>
-                        </p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="content-container">
-        <section class="block timeline" id="experience">
-            <h4 class="subtitle">Professional Experience</h4>
-            <div class="entry">
-                <img src="naffco-site.jpg" alt="NAFFCO Dubai" class="entry-photo" onerror="this.style.display='none'">
-                <div>
-                    <h5>BIM Specialist &amp; Project Engineer</h5>
-                    <p class="meta">NAFFCO, Dubai, UAE · 2017–2019</p>
-                    <p>BIM modelling and coordination, site engineering, and project delivery in the fire protection and construction sector.</p>
-                </div>
-            </div>
-            <div class="entry">
-                <img src="global-architects-office.jpg" alt="The Global Architects" class="entry-photo" onerror="this.style.display='none'">
-                <div>
-                    <h5>Junior Architect</h5>
-                    <p class="meta">The Global Architects, Hyderabad, Pakistan · 2012–2015</p>
-                    <p>Architectural design and construction documentation for residential and commercial projects.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="block">
-            <h4 class="subtitle">Activities &amp; Leadership</h4>
-            <div class="entry">
-                <img src="malaysia-event.jpg" alt="Postgraduate association event" class="entry-photo" onerror="this.style.display='none'">
-                <div>
-                    <h5>Postgraduate Association</h5>
-                    <p class="meta">Universiti Sains Malaysia · 2015–2016</p>
-                    <p>Active member during my MSc; organised academic and social events together with fellow postgraduate students.</p>
-                </div>
-            </div>
-            <div class="entry">
-                <img src="reviewing.jpg" alt="Peer review" class="entry-photo" onerror="this.style.display='none'">
-                <div>
-                    <h5>Peer Reviewer</h5>
-                    <p class="meta">International journals · 14 reviews completed</p>
-                    <p>Peer reviewer — 14 reviews across 6 journals: <em>IEEE Geoscience and Remote Sensing Letters</em>, <em>Buildings</em>, <em>Land</em>, <em>Forests</em>, <em>Engineering Research Express</em>, and <em>Urbanization, Sustainability and Society</em>.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="block timeline" id="education">
-            <h4 class="subtitle">Education</h4>
-            <ul>
-                <li><strong>PhD, Digitalisation and Society</strong> — Østfold University of Applied Sciences, Norway (ongoing)</li>
-                <li><strong>2nd Level Specialized Master's, Climate Change: Adaptation and Mitigation Solutions</strong> — Politecnico di Torino, Italy</li>
-                <li><strong>MSc, Building Technology</strong> — Universiti Sains Malaysia, 2015–2016</li>
-                <li><strong>Bachelor of Architecture</strong> — Mehran University of Engineering &amp; Technology, Pakistan</li>
-            </ul>
-        </section>
-
-        <section class="block" id="gallery">
-            <h4 class="subtitle">Gallery</h4>
-            <div class="gallery-grid">
-                <figure><img src="gallery-gsb-1.jpg" alt="Green Sponge Buildings site"><figcaption>Green Sponge Buildings — site</figcaption></figure>
-                <figure><img src="gallery-gsb-2.jpg" alt="Green Sponge Buildings site"><figcaption>Green Sponge Buildings — site</figcaption></figure>
-                <figure><img src="gallery-conf-1.jpg" alt="Conference"><figcaption>Conference</figcaption></figure>
-                <figure><img src="gallery-conf-2.jpg" alt="Conference"><figcaption>Conference</figcaption></figure>
-                <figure><img src="gallery-news-1.jpg" alt="University news"><figcaption>In the news</figcaption></figure>
-                <figure><img src="malaysia-event.jpg" alt="Postgraduate association event"><figcaption>Postgraduate association, Malaysia</figcaption></figure>
-            </div>
-        </section>
-    </div>
+</header>
+<main id="main-content">
+<section aria-labelledby="hero-title" class="hero">
+<div class="shell hero-grid">
+<div class="hero-copy">
+<p class="availability"><span>Seeking Postdoctoral Opportunities</span><span class="availability-years">beginning in 2027</span></p>
+<p class="kicker">Doctoral Research Fellow · Urban climate adaptation</p>
+<h1 id="hero-title">Urban Climate Adaptation and Resilient Development</h1>
+<p class="hero-summary">My research examines how urban form, infrastructure, and nature-based solutions shape climate risk, and how cities can develop while reducing long-term vulnerability.</p>
+<div aria-label="Academic profiles" class="hero-links">
+<a class="primary-link" href="#work">Selected research</a>
+<a href="https://scholar.google.com/citations?user=hIw2pUEAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a>
+<a href="https://orcid.org/0000-0003-0678-5171" rel="noopener noreferrer" target="_blank">ORCID ↗</a>
+<a href="https://github.com/nizamani-ag" rel="noopener noreferrer" target="_blank">GitHub ↗</a>
 </div>
-
-<div id="footer">
-    <div class="copyright">© <span id="year"></span> Abdul Ghafoor Nizamani · Last updated: August 2026</div>
 </div>
+<aside aria-label="Profile summary" class="profile">
+<img alt="Portrait of Abdul Ghafoor Nizamani" class="portrait" src="photo.jpg"/>
+<div class="profile-meta">
+<p><strong>Østfold University of Applied Sciences</strong><br/>Norway</p>
+<a href="https://www.hiof.no/iio/english/people/aca/abdulgn/" rel="noopener noreferrer" target="_blank">University profile ↗</a>
+</div>
+</aside>
+</div>
+</section>
+<section aria-labelledby="about-research-title" class="section intro-section" id="about-research">
+<div class="shell editorial-grid intro-grid">
+<div class="section-label">
+<p class="kicker">Research profile</p>
+<h2 id="about-research-title">Urban Systems and Climate Risk</h2>
+</div>
+<div class="intro-copy"><p>I am a Doctoral Research Fellow at Østfold University of Applied Sciences. My PhD project, <em>Green Sponge Buildings</em>, examines how buildings and urban systems can contribute to climate resilience through green infrastructure and nature-based solutions.</p><p>My current research connects urban form, infrastructure, nature-based solutions, environmental observation, spatial analysis, and computational modelling to questions of climate risk and adaptation.</p><p class="current-direction">Current research direction: climate-ready urban development.</p></div>
+</div>
+</section>
+<section aria-labelledby="research-title" class="section research-section" id="research">
+<div class="shell editorial-grid">
+<div class="section-label">
+<p class="kicker">Research</p>
+<h2 id="research-title">Three Connected Directions</h2>
+</div>
+<div class="research-list">
+<article class="research-item">
+<span class="research-number">01</span>
+<div>
+<h3>Nature-Based Solutions and Urban Adaptation</h3>
+<p>Green roofs, vertical greenery systems, and other nature-based interventions for stormwater management, urban heat mitigation, and climate adaptation.</p>
+</div>
+</article>
+<article class="research-item">
+<span class="research-number">02</span>
+<div>
+<h3>Computational Urban Climate and Resilience</h3>
+<p>Computational and physics-informed modelling, remote sensing, and spatial analysis for understanding urban climate processes and testing adaptation interventions.</p>
+</div>
+</article>
+<article class="research-item">
+<span class="research-number">03</span>
+<div>
+<h3>Urban Development, Infrastructure and Climate Risk</h3>
+<p>Research on how urban form, infrastructure decisions, institutional conditions, and development patterns interact with climate hazards and shape long-term resilience and vulnerability.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="work-title" class="section work-section" id="work">
+<div class="shell">
+<div class="section-heading-simple">
+<p class="kicker">Selected research</p>
+<h2 id="work-title">Recent Work Closest to My Current Direction</h2>
+</div>
+<article class="work-row">
+<button aria-label="Open full figure for green walls research" class="work-image image-button" data-lightbox="projects/full/green-walls.png" type="button">
+<img alt="Research figure for building-integrated green wall stormwater performance" src="projects/green-walls.png"/>
+</button>
+<div class="work-copy">
+<p class="work-meta">2026 · Green infrastructure · Stormwater</p>
+<h3>Operational stormwater performance of building-integrated green walls</h3>
+<p>Examines how building-integrated green walls retain stormwater under changing antecedent and rainfall conditions.</p>
+<p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Maria Pregnolato, Geir Torgersen</p>
+<p class="work-links"><span>Research Square preprint · under review at npj Urban Sustainability</span><a href="https://doi.org/10.21203/rs.3.rs-10841067/v1" rel="noopener noreferrer" target="_blank">Preprint ↗</a></p>
+</div>
+</article>
+<article class="work-row">
+<button aria-label="Open full figure for physics-informed urban cooling research" class="work-image image-button" data-lightbox="projects/full/pinn-urban-cooling.jpg" type="button">
+<img alt="Research figure for physics-informed neural network urban cooling study" src="projects/pinn-urban-cooling.png"/>
+</button>
+<div class="work-copy">
+<p class="work-meta">2026 · Urban climate · Physics-informed modelling</p>
+<h3>Physics-informed neural network calibration and application for urban cooling</h3>
+<p>Examines how green-roof interventions alter urban surface-temperature patterns, using physics-informed neural networks with environmental and spatial data.</p>
+<p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Dung Thi Vu, Rafeeque Ahmed Nizamani, Cunrong Li</p>
+<p class="work-links"><span>Sustainable Cities and Society</span><a href="https://doi.org/10.1016/j.scs.2026.107525" rel="noopener noreferrer" target="_blank">Paper ↗</a><a href="https://doi.org/10.5281/zenodo.20323753" rel="noopener noreferrer" target="_blank">Code ↗</a></p>
+</div>
+</article>
+<article class="work-row">
+<button aria-label="Open full figure for nature-based solutions and urban resilience research" class="work-image image-button" data-lightbox="projects/full/nbs-resilience.jpg" type="button">
+<img alt="Research figure for global analysis of nature-based solutions and urban resilience" src="projects/nbs-resilience.png"/>
+</button>
+<div class="work-copy">
+<p class="work-meta">2026 · Nature-based solutions · Urban resilience</p>
+<h3>Urban resilience through nature-based solutions in an era of environmental extremes: A global systematic analysis</h3>
+<p>Synthesizes global evidence on the role of nature-based solutions in urban resilience under environmental extremes.</p>
+<p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Dung Thi Vu, Rafeeque Ahmed Nizamani, Geir Torgersen</p>
+<p class="work-links"><span>Sustainable Cities and Society</span><a href="https://doi.org/10.1016/j.scs.2026.107192" rel="noopener noreferrer" target="_blank">Paper ↗</a><a href="https://hdl.handle.net/11250/5363609" rel="noopener noreferrer" target="_blank">Full text ↗</a></p>
+</div>
+</article>
+<article class="work-row work-row-text"><div aria-label="Manuscript status" class="manuscript-lead"><p class="manuscript-journal">Land Use Policy</p><p class="manuscript-status">First revision under review</p><p class="manuscript-topic">Urban governance · Blue-green infrastructure</p></div><div class="work-copy"><p class="work-meta">2026 · Urban governance · Blue-green infrastructure</p><h3>Coding Governance: How Institutional Fragmentation Creates Self-Reinforcing Failure in Urban Blue-Green Infrastructure</h3><p>Examines how institutional fragmentation and socio-technical misalignment can create self-reinforcing barriers to urban blue-green infrastructure implementation.</p><p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Petra Thorpert, Geir Torgersen</p><p class="work-links"><span>Land Use Policy · first revision under review</span></p></div></article>
+</div>
+</section>
+<section aria-labelledby="publications-title" class="section publications-section" id="publications">
+<div class="shell editorial-grid publications-grid">
+<div class="section-label sticky-label">
+<p class="kicker">Publications</p>
+<h2 id="publications-title">Selected Publications</h2>
+<p>Current citation record and complete profile on <a href="https://scholar.google.com/citations?user=hIw2pUEAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a>.</p>
+</div>
+<div class="publication-list">
+<article class="publication">
+<p class="pub-year">2026</p>
+<div><p class="pub-venue">Research Square preprint</p><h3>Operational stormwater performance of building integrated green walls</h3><p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Maria Pregnolato, Geir Torgersen</p><p class="pub-links"><span>Under review at npj Urban Sustainability</span><a href="https://doi.org/10.21203/rs.3.rs-10841067/v1" rel="noopener noreferrer" target="_blank">Preprint ↗</a></p></div>
+</article>
+<article class="publication">
+<p class="pub-year">2026</p>
+<div><p class="pub-venue">Sustainable Cities and Society</p><h3>Physics-informed neural network calibration and application for urban cooling</h3><p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Dung Thi Vu, Rafeeque Ahmed Nizamani, Cunrong Li</p><p class="pub-links"><a href="https://doi.org/10.1016/j.scs.2026.107525" rel="noopener noreferrer" target="_blank">Paper ↗</a><a href="https://doi.org/10.5281/zenodo.20323753" rel="noopener noreferrer" target="_blank">Code ↗</a><a href="https://hdl.handle.net/11250/5523626" rel="noopener noreferrer" target="_blank">Full text ↗</a></p></div>
+</article><article class="publication">
+<p class="pub-year">2026</p>
+<div><p class="pub-venue">Sustainable Cities and Society</p><h3>Urban resilience through nature-based solutions in an era of environmental extremes: A global systematic analysis</h3><p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Dung Thi Vu, Rafeeque Ahmed Nizamani, Geir Torgersen</p><p class="pub-links"><a href="https://doi.org/10.1016/j.scs.2026.107192" rel="noopener noreferrer" target="_blank">Paper ↗</a><a href="https://hdl.handle.net/11250/5363609" rel="noopener noreferrer" target="_blank">Full text ↗</a></p></div>
+</article>
 
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-
-
-// Publication topic filters
-document.querySelectorAll('.pf-btn').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    document.querySelectorAll('.pf-btn').forEach(function (b) { b.classList.remove('active'); });
-    btn.classList.add('active');
-    var f = btn.getAttribute('data-filter');
-    document.querySelectorAll('#pub-card-container .pub-card').forEach(function (card) {
-      card.classList.toggle('hidden', f !== 'all' && card.getAttribute('data-topic') !== f);
-    });
-  });
-});
-
-// Lightbox: click any publication thumbnail to view the full figure
-(function () {
-  var overlay = document.createElement('div');
-  overlay.id = 'lightbox-overlay';
-  overlay.innerHTML = '<span class="lb-close">&times;</span><img alt="Full figure">';
-  document.body.appendChild(overlay);
-  var lbImg = overlay.querySelector('img');
-  function close() { overlay.classList.remove('open'); }
-  overlay.addEventListener('click', close);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
-  document.querySelectorAll('#pub-card-container .pub-card img, .gallery-grid img').forEach(function (thumb) {
-    thumb.addEventListener('click', function () {
-      lbImg.src = thumb.getAttribute('data-full') || thumb.src;
-      overlay.classList.add('open');
-    });
-  });
-})();
-</script>
+<article class="publication">
+<p class="pub-year">2025</p>
+<div><p class="pub-venue">Environmental Research Letters</p><h3>Climate as the primary moderator: towards context-driven design and implementation of vertical greenery systems for stormwater management</h3><p class="authors"><strong>Abdul Ghafoor Nizamani</strong>, Geir Torgersen</p><p class="pub-links"><a href="https://doi.org/10.1088/1748-9326/ae2b86" rel="noopener noreferrer" target="_blank">Paper ↗</a><a href="https://hdl.handle.net/11250/5274819" rel="noopener noreferrer" target="_blank">Full text ↗</a></p></div>
+</article>
+<article class="publication">
+<p class="pub-year">2025</p>
+<div><p class="pub-venue">EarthArXiv preprint</p><h3>Smart Urban Design with Physics-Informed Neural Networks: Quantifying Temperature Reductions from Green Infrastructure Using Satellite Thermal Data</h3><p class="authors">Dung Thi Vu, Rafeeque Ahmed Nizamani, <strong>Abdul Ghafoor Nizamani</strong></p><p class="pub-links"><a href="https://doi.org/10.31223/X51T9D" rel="noopener noreferrer" target="_blank">Preprint ↗</a><a href="https://doi.org/10.5281/zenodo.17385259" rel="noopener noreferrer" target="_blank">Code ↗</a></p></div>
+</article>
+<details class="earlier-publications">
+<summary>Earlier Research</summary>
+<div class="earlier-list">
+<article><p class="pub-year">2024</p><div><p class="pub-venue">Atmospheric Measurement Techniques</p><h3>Performance evaluation of MeteoTracker mobile sensor for outdoor applications</h3><p class="authors">Francesca Barbano, Erika Brattich, Cristian Cintolesi, <strong>A. Ghafoor Nizamani</strong>, Silvana Di Sabatino, et al.</p><p class="pub-links"><a href="https://amt.copernicus.org/articles/17/3255/2024/" rel="noopener noreferrer" target="_blank">Paper ↗</a></p></div></article>
+<article><p class="pub-year">2023</p><div><p class="pub-venue">Environmental Science and Pollution Research</p><h3>The impacts of conventional energies on environmental degradation: does Pakistan's economic and environmental model follow the Kuznets curve?</h3><p class="authors">Rafeeque Ahmed Nizamani, Faheem Shaikh, <strong>Abdul Ghafoor Nizamani</strong>, Najeebullah Haider Mirjat, Laveet Kumar, Muhammad Ehsan Elahi Assad</p><p class="pub-links"><a href="https://doi.org/10.1007/s11356-022-22611-x" rel="noopener noreferrer" target="_blank">Paper ↗</a></p></div></article>
+<article><p class="pub-year">2021</p><div><p class="pub-venue">Energy and Buildings</p><h3>Influences of the optimized air curtain at subway entrance to reduce the ingress of outdoor airborne particles</h3><p class="authors">Tugce Chen, Sheng-Jie Cao, Jing Wang, <strong>Abdul Ghafoor Nizamani</strong>, Zhengtao Feng, Prashant Kumar</p><p class="pub-links"><a href="https://doi.org/10.1016/j.enbuild.2021.111028" rel="noopener noreferrer" target="_blank">Paper ↗</a></p></div></article>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section aria-labelledby="background-title" class="section background-section" id="background">
+<div class="shell editorial-grid">
+<div class="section-label">
+<p class="kicker">Background</p>
+<h2 id="background-title">Training and Practice</h2>
+</div>
+<div class="background-columns">
+<div>
+<h3>Education</h3>
+<dl class="background-list">
+<div><dt>PhD, Digitalisation and Society</dt><dd>Østfold University of Applied Sciences, Norway · ongoing</dd></div>
+<div><dt>2nd Level Specialized Master's, Climate Change: Adaptation and Mitigation Solutions</dt><dd>Politecnico di Torino, Italy</dd></div>
+<div><dt>MSc, Building Technology</dt><dd>Universiti Sains Malaysia · 2015–2016</dd></div>
+<div><dt>Bachelor of Architecture</dt><dd>Mehran University of Engineering &amp; Technology, Pakistan</dd></div>
+</dl>
+</div>
+<div>
+<h3>Professional and Academic Service</h3>
+<dl class="background-list">
+<div><dt>BIM Specialist &amp; Project Engineer · 2017–2019</dt><dd>NAFFCO · Dubai, UAE</dd></div>
+<div><dt>Junior Architect · 2012–2015</dt><dd>The Global Architects · Hyderabad, Pakistan</dd></div>
+<div><dt>Peer reviewer</dt><dd>14 reviews across 6 journals, including <em>IEEE Geoscience and Remote Sensing Letters</em>, <em>Buildings</em>, <em>Land</em>, <em>Forests</em>, <em>Engineering Research Express</em>, and <em>Urbanization, Sustainability and Society</em>.</dd></div>
+</dl>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="updates-title" class="section updates-section">
+<div class="shell editorial-grid">
+<div class="section-label">
+<p class="kicker">Recent</p>
+<h2 id="updates-title">Updates</h2>
+</div>
+<div class="updates-list"><article><time datetime="2026-09">Sep 2026</time><p>New preprint on operational stormwater performance of building-integrated green walls, under review at <em>npj Urban Sustainability</em>.</p></article><article><time datetime="2026-07">Jul 2026</time><p>First revision of the urban blue-green infrastructure governance manuscript under review at <em>Land Use Policy</em>.</p></article><article><time datetime="2026-07">Jul 2026</time><p>Paper on physics-informed neural network calibration for urban cooling published in <em>Sustainable Cities and Society</em>.</p></article><article><time datetime="2026">2026</time><p>Systematic analysis of urban resilience through nature-based solutions published in <em>Sustainable Cities and Society</em>.</p></article></div>
+</div>
+</section>
+<section aria-labelledby="recognition-title" class="section recognition-section">
+<div class="shell editorial-grid">
+<div class="section-label">
+<p class="kicker">Beyond publications</p>
+<h2 id="recognition-title">Recognition &amp; Public Engagement</h2>
+</div>
+<div class="recognition-content">
+<div class="recognition-list">
+<article class="recognition-item">
+<div class="recognition-meta">2024 Award</div>
+<div><h3>Young Water Professionals European Conference 2024</h3><p>Second-best presentation for <em>Categorization of Green Walls for Effective Stormwater Management</em>.</p><a href="https://greenspongebuildings.eu/abdul-ghafoor-nizamani-fikk-pris-under-young-water-professionals-konferansen-2024/" rel="noopener noreferrer" target="_blank">Green Sponge Buildings ↗</a></div>
+</article>
+<article class="recognition-item">
+<div class="recognition-meta">2026 Research Feature</div>
+<div><h3>Plant walls and urban flood mitigation</h3><p>Research feature on green walls as climate-adaptation infrastructure and their potential role in reducing urban flood impacts.</p><a href="https://www.forskning.no/baerekraft-flom-hogskolen-i-ostfold/svampebygg-vegger-av-planter-kan-dempe-flomskader-i-byene/2634657" rel="noopener noreferrer" target="_blank">forskning.no ↗</a></div>
+</article>
+<article class="recognition-item">
+<div class="recognition-meta">2025 Public Engagement</div>
+<div><h3>How to Build Greener — and Why</h3><p>Public event hosted by Østfold University of Applied Sciences.</p><a href="https://www.hiof.no/iio/om/aktuelt/arrangementer/2025/hvordan-bygge-gronnere---og-hvorfor.html" rel="noopener noreferrer" target="_blank">Østfold University of Applied Sciences ↗</a></div>
+</article>
+</div>
+<details class="more-coverage">
+<summary>More Research Coverage</summary>
+<div class="coverage-links">
+<a href="https://www.hiof.no/iio/english/research/groups/building-and-environment/news/abdul---publishing-forst-paper.html" rel="noopener noreferrer" target="_blank"><span>Østfold University of Applied Sciences</span><strong>Research news feature on first publication</strong></a>
+<a href="https://www.f-b.no/gronne-vegger-i-fredrikstad-kan-planter-forhindre-flom/s/5-59-3521035" rel="noopener noreferrer" target="_blank"><span>Fredriksstad Blad</span><strong>Green walls in Fredrikstad and flood mitigation</strong></a>
+<a href="https://www.hiof.no/iio/om/aktuelt/aktuelle-saker/2026/gronne-vegger-kan-bidra-til-a-dempe-flomskader-i-b.html" rel="noopener noreferrer" target="_blank"><span>Østfold University of Applied Sciences</span><strong>Research news on green walls and flood-damage reduction</strong></a>
+</div>
+</details>
+</div>
+</div>
+</section>
+<section aria-labelledby="contact-title" class="contact-section" id="contact">
+<div class="shell contact-grid">
+<div>
+<p class="kicker">Contact</p>
+<h2 id="contact-title">Postdoctoral Research &amp; Collaboration</h2>
+</div>
+<div class="contact-copy">
+<p>I am currently exploring postdoctoral opportunities beginning in 2027, particularly around urban climate adaptation, resilient development, and nature-based infrastructure.</p>
+<p class="email">abdul.g.nizamani [at] hiof [dot] no</p>
+<div class="contact-links"><a href="https://www.hiof.no/iio/english/people/aca/abdulgn/" rel="noopener noreferrer" target="_blank">University profile ↗</a><a href="https://scholar.google.com/citations?user=hIw2pUEAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a><a href="https://orcid.org/0000-0003-0678-5171" rel="noopener noreferrer" target="_blank">ORCID ↗</a><a href="https://github.com/nizamani-ag" rel="noopener noreferrer" target="_blank">GitHub ↗</a></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="shell footer-row"><p>© <span id="year"></span> Abdul Ghafoor Nizamani</p><p>Last updated: September 2026</p></div>
+</footer>
+<div aria-hidden="true" aria-label="Expanded research image" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+<button aria-label="Close image" class="lightbox-close" type="button">×</button>
+<img alt="Expanded research figure" id="lightbox-image" src=""/>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

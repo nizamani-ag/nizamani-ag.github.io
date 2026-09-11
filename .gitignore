@@ -1,0 +1,6 @@
+# Internal design iteration notes (not part of the published site)
+REDESIGN_NOTES*.md
+
+# OS/editor junk
+.DS_Store
+Thumbs.db

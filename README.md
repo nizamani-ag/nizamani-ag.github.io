@@ -1,26 +1,36 @@
-# Academic Website (GitHub Pages)
+# Abdul Ghafoor Nizamani — Academic Website
 
-Simple static site for a PhD candidate seeking postdoc positions. No build step needed — pure HTML/CSS.
+Static academic website designed for GitHub Pages and postdoctoral applications. It uses plain HTML, CSS, and JavaScript with no build step and no third-party front-end dependencies.
 
 ## Local preview
 
-Open `index.html` in a browser, or run:
+From the repository root:
 
 ```bash
 python3 -m http.server 8000
-# then visit http://localhost:8000
 ```
 
-## Publish on GitHub Pages
+Then open `http://localhost:8000`.
 
-1. Create a new repository on GitHub (e.g. `username.github.io` for a site at `https://username.github.io`).
-2. Upload/push these files (index.html, style.css, and optionally CV.pdf) to the repository.
-3. Go to **Settings → Pages** and set **Source** to `Deploy from a branch` → `main` → `/ (root)`.
-4. Your site is live at `https://username.github.io` within a minute.
+## Core files
 
-## To-dos
+- `index.html` — page content and metadata
+- `style.css` — responsive visual system
+- `script.js` — mobile navigation, publication filters, and image lightbox
+- `favicon.svg` — browser/site icon
+- `photo.jpg` — profile photo
+- `projects/` — publication thumbnails and full-resolution research figures
 
-- [ ] Replace `[YOUR NAME]` and other bracketed placeholders in `index.html`
-- [ ] Fill in bio, research keywords, publications
-- [ ] Add `CV.pdf`
-- [ ] (Optional) Connect a custom domain in **Settings → Pages**
+## Before publishing
+
+1. Review all publication status wording and dates.
+2. Add a current `CV.pdf` and a visible CV link once the final CV is ready.
+3. Add the final GitHub Pages URL as a canonical URL and `og:url` after deployment.
+4. Check the site on desktop and mobile.
+5. Consider moving research code in `code/` to a dedicated repository or archival release if it is already available through GitHub/Zenodo; the academic website itself does not require those source files to render.
+
+## GitHub Pages
+
+In the GitHub repository, go to **Settings → Pages**, choose **Deploy from a branch**, select `main`, and use `/ (root)`.
+
+No build command is required.

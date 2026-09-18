@@ -155,7 +155,7 @@ button { font: inherit; color: inherit; }
 .contact-links a { font-size:1.08rem; font-weight:750; text-decoration:none; }
 
 /* Footer */
-.site-footer { padding:22px 0; background:#f2f5fa; border-top:1px solid var(--line); color:#6d788a; }
+.site-footer { padding:22px 0; background:#f2f5fa; border-top:1px solid var(--line); color:#5f6978; }
 .footer-row { display:flex; justify-content:space-between; gap:20px; }
 .footer-row p { margin:0; font-size:.92rem; }
 

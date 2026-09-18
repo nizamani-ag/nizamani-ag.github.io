@@ -136,6 +136,7 @@ button { font: inherit; color: inherit; }
 .recognition-item h3 { margin:0 0 7px; color:var(--ink); font-size:1.2rem; line-height:1.4; font-weight:600; }
 .recognition-item p { margin:0 0 9px; max-width:720px; color:var(--ink-soft); font-size:1.08rem; line-height:1.6; }
 .recognition-item a { display:inline-block; padding-block:3px; font-size:1rem; font-weight:700; text-decoration:none; }
+.recognition-item a + a { margin-left:16px; }
 .more-coverage { margin-top:18px; border-bottom:1px solid var(--line); }
 .more-coverage summary { padding:14px 0 16px; cursor:pointer; color:var(--accent); font-size:1.02rem; font-weight:700; }
 .coverage-links { padding-bottom:15px; }

@@ -2,9 +2,6 @@
 .render/
 REDESIGN_NOTES*.md
 
-# CV - kept locally, NOT published to the website
-cv/
-
 # OS/editor junk
 .DS_Store
 Thumbs.db

@@ -140,7 +140,7 @@ button { font: inherit; color: inherit; }
 .more-coverage { margin-top:18px; border-bottom:1px solid var(--line); }
 .more-coverage summary { padding:14px 0 16px; cursor:pointer; color:var(--accent); font-size:1.02rem; font-weight:700; }
 .coverage-links { padding-bottom:15px; }
-.coverage-links a { display:grid; grid-template-columns:210px minmax(0,1fr); gap:24px; padding:13px 0; border-top:1px solid var(--line); text-decoration:none; }
+.coverage-links a, .coverage-links .coverage-item { display:grid; grid-template-columns:210px minmax(0,1fr); gap:24px; padding:13px 0; border-top:1px solid var(--line); text-decoration:none; }
 .coverage-links span { color:var(--ink-soft); font-size:.95rem; }
 .coverage-links strong { color:var(--ink); font-size:1.04rem; font-weight:650; }
 .coverage-links a:hover strong { color:var(--accent); }
@@ -211,7 +211,7 @@ button { font: inherit; color: inherit; }
   .recognition-section { padding-top:52px; padding-bottom:54px; }
   .recognition-item { grid-template-columns:1fr; gap:8px; padding:20px 0 22px; }
   .recognition-meta span + span::before { content:"· "; }
-  .coverage-links a { grid-template-columns:1fr; gap:3px; padding:12px 0; }
+  .coverage-links a, .coverage-links .coverage-item { grid-template-columns:1fr; gap:3px; padding:12px 0; }
   .contact-section { padding:56px 0; }
   .contact-grid { grid-template-columns:1fr; gap:18px; }
   .contact-copy { padding-top:0; font-size:1.08rem; line-height:1.65; }

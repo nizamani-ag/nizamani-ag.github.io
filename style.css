@@ -76,8 +76,9 @@ button { font: inherit; color: inherit; }
 
 /* Research */
 .research-section { border-top:1px solid var(--line); }
-.research-list { border-top:1px solid var(--line); }
+.research-list { border-top:0; }
 .research-item { display:grid; grid-template-columns:48px minmax(0,1fr); gap:18px; padding:25px 0 27px; border-bottom:1px solid var(--line); }
+.research-item:last-child { border-bottom:0; }
 .research-number { padding-top:5px; color:var(--warm); font-size:.9rem; font-weight:800; letter-spacing:.08em; }
 .research-item h3 { margin:0 0 8px; font-weight:600; font-size:1.5rem; line-height:1.18; letter-spacing:-.02em; }
 .research-item p { margin:0; max-width:760px; color:var(--ink-soft); font-size:1.13rem; line-height:1.64; }
@@ -98,7 +99,7 @@ button { font: inherit; color: inherit; }
 .work-links a, .pub-links a { font-weight:750; text-decoration:none; }
 
 /* Manuscript lead (text-only work row) */
-.manuscript-lead { align-self:stretch; padding:22px 0; border-top:2px solid var(--accent); border-bottom:1px solid var(--line); }
+.manuscript-lead { align-self:start; padding:0; border:0; }
 .manuscript-lead p { margin:0; }
 .manuscript-journal { color:var(--ink); font-size:1.4rem; font-weight:700; letter-spacing:-.02em; }
 .manuscript-status { margin-top:9px !important; color:var(--accent); font-size:1.02rem; font-weight:700; }
@@ -203,7 +204,7 @@ button { font: inherit; color: inherit; }
   .section { padding:56px 0; }
   .research-item { grid-template-columns:42px 1fr; gap:13px; }
   .work-row { grid-template-columns:1fr; gap:20px; padding:24px 0; }
-  .manuscript-lead { padding:16px 0 18px; }
+  .manuscript-lead { padding:0; }
   .manuscript-topic { max-width:none; }
   .background-columns { grid-template-columns:1fr; gap:28px; }
   .background-columns > div + div { border-left:0; padding-left:0; }
